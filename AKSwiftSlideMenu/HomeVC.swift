@@ -21,6 +21,26 @@ class HomeVC: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func leftSlideAction(_ sender: Any) {
+        if (sender as AnyObject).state == .ended
+        {
+            print("left slide")
+            
+            let menuVC : MenuViewController = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+            menuVC.delegate = self
+            self.view.addSubview(menuVC.view)
+            self.addChildViewController(menuVC)
+            menuVC.view.layoutIfNeeded()
+            
+            
+            menuVC.view.frame=CGRect(x: 0 - UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
+            
+            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+                menuVC.view.frame=CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
+            }, completion:nil)
+        }
+    }
+    
 
     /*
     // MARK: - Navigation

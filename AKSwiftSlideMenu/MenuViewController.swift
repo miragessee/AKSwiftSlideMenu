@@ -63,24 +63,38 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     @IBAction func onCloseMenuClick(_ button:UIButton!){
-        btnMenu.tag = 0
-        
-        if (self.delegate != nil) {
-            var index = Int32(button.tag)
-            if(button == self.btnCloseMenuOverlay){
-                index = -1
+        if btnMenu != nil
+        {
+            btnMenu.tag = 0
+            
+            if (self.delegate != nil) {
+                var index = Int32(button.tag)
+                if(button == self.btnCloseMenuOverlay){
+                    index = -1
+                }
+                delegate?.slideMenuItemSelectedAtIndex(index)
             }
-            delegate?.slideMenuItemSelectedAtIndex(index)
-        }
-        
-        UIView.animate(withDuration: 0.3, animations: { () -> Void in
-            self.view.frame = CGRect(x: -UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height)
-            self.view.layoutIfNeeded()
-            self.view.backgroundColor = UIColor.clear
+            
+            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+                self.view.frame = CGRect(x: -UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height)
+                self.view.layoutIfNeeded()
+                self.view.backgroundColor = UIColor.clear
             }, completion: { (finished) -> Void in
                 self.view.removeFromSuperview()
                 self.removeFromParentViewController()
-        })
+            })
+        }
+        else
+        {
+            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+                self.view.frame = CGRect(x: -UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height)
+                self.view.layoutIfNeeded()
+                self.view.backgroundColor = UIColor.clear
+            }, completion: { (finished) -> Void in
+                self.view.removeFromSuperview()
+                self.removeFromParentViewController()
+            })
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
