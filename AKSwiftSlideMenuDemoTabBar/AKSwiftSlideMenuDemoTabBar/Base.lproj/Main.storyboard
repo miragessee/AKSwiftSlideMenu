@@ -133,8 +133,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-cl-gbE">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FirstViewController TabBar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-cl-gbE">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -157,7 +157,7 @@
                     </connections>
                 </screenEdgePanGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1846" y="-448"/>
+            <point key="canvasLocation" x="1845.5999999999999" y="-448.42578710644682"/>
         </scene>
         <!--Second-->
         <scene sceneID="zKT-dp-r4P">
@@ -171,8 +171,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf3-z9-6jw">
-                                <rect key="frame" x="154" y="323" width="66" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SecondViewController TabBar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf3-z9-6jw">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -196,7 +196,7 @@
             </objects>
             <point key="canvasLocation" x="1845.5999999999999" y="204.64767616191907"/>
         </scene>
-        <!--Third Cell View Controller-->
+        <!--Third-->
         <scene sceneID="uqS-0f-10w">
             <objects>
                 <viewController storyboardIdentifier="ThirdCellViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nxt-t2-PhZ" customClass="ThirdCellViewController" customModule="AKSwiftSlideMenuDemoTabBar" customModuleProvider="target" sceneMemberID="viewController">
@@ -208,14 +208,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vLk-Lm-edo" appends="YES" id="W46-jX-nUV"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="Lrg-Ze-JSv"/>
+                    <navigationItem key="navigationItem" title="Third" id="Lrg-Ze-JSv"/>
+                    <connections>
+                        <outlet property="screenEdgePanGesture" destination="vLk-Lm-edo" id="tU0-JN-wwx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4pt-zL-ZJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="vLk-Lm-edo">
+                    <connections>
+                        <action selector="leftSlideAction:" destination="Nxt-t2-PhZ" id="uAh-7W-eHv"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1856.8" y="2352.7736131934034"/>
         </scene>
-        <!--Second Cell View Controller-->
+        <!--Second-->
         <scene sceneID="YKw-Rs-Qpf">
             <objects>
                 <viewController storyboardIdentifier="SecondCellViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kqe-qP-b9L" customClass="SecondCellViewController" customModule="AKSwiftSlideMenuDemoTabBar" customModuleProvider="target" sceneMemberID="viewController">
@@ -227,10 +239,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="c64-h3-xoy" appends="YES" id="7z7-VH-269"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="zaB-v4-Yxg"/>
+                    <navigationItem key="navigationItem" title="Second" id="zaB-v4-Yxg"/>
+                    <connections>
+                        <outlet property="screenEdgePanGesture" destination="c64-h3-xoy" id="dPV-sv-9gp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14c-nY-gSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="c64-h3-xoy">
+                    <connections>
+                        <action selector="leftSlideAction:" destination="kqe-qP-b9L" id="M0k-iA-11h"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1856.8" y="1690.704647676162"/>
         </scene>
@@ -246,10 +270,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="v1F-9t-844" appends="YES" id="ikg-Bp-SEn"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="First" id="jr3-Sb-CjC"/>
+                    <connections>
+                        <outlet property="screenEdgePanGesture" destination="v1F-9t-844" id="WX9-up-9QD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwZ-eg-2e8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="v1F-9t-844">
+                    <connections>
+                        <action selector="leftSlideAction:" destination="KY3-ip-7Hf" id="4dw-7g-wQP"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1856.8" y="1002.5487256371815"/>
         </scene>
@@ -265,8 +301,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Third" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEP-dI-Qaj">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ThirdViewController TabBar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEP-dI-Qaj">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
