@@ -65,6 +65,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func onCloseMenuClick(_ button:UIButton!){
         if btnMenu != nil
         {
+            BaseViewController.isOpen = false
             btnMenu.tag = 0
             
             if (self.delegate != nil) {
@@ -86,6 +87,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         else
         {
+            BaseViewController.isOpen = false
             UIView.animate(withDuration: 0.3, animations: { () -> Void in
                 self.view.frame = CGRect(x: -UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height)
                 self.view.layoutIfNeeded()

@@ -10,6 +10,8 @@ import UIKit
 
 class BaseViewController: UIViewController, SlideMenuDelegate {
     
+    static var isOpen : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -85,8 +87,9 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     }
     
     func onSlideMenuButtonPressed(_ sender : UIButton){
-        if (sender.tag == 10)
+        if (sender.tag == 10 || BaseViewController.isOpen)
         {
+            BaseViewController.isOpen=false
             // To Hide Menu If it already there
             self.slideMenuItemSelectedAtIndex(-1);
             
@@ -107,6 +110,9 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             return
         }
         
+        if !BaseViewController.isOpen
+        {
+            BaseViewController.isOpen = true
         sender.isEnabled = false
         sender.tag = 10
         
@@ -124,5 +130,6 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             menuVC.view.frame=CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
             sender.isEnabled = true
             }, completion:nil)
+        }
     }
 }

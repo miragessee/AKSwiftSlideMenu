@@ -24,6 +24,7 @@ class HomeVC: BaseViewController {
     @IBAction func leftSlideAction(_ sender: Any) {
         if (sender as AnyObject).state == .ended
         {
+            BaseViewController.isOpen = true
             print("left slide")
             
             let menuVC : MenuViewController = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
