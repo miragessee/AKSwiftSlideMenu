@@ -213,7 +213,13 @@
                             <outletCollection property="gestureRecognizers" destination="vLk-Lm-edo" appends="YES" id="W46-jX-nUV"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Third" id="Lrg-Ze-JSv"/>
+                    <navigationItem key="navigationItem" title="Third" id="Lrg-Ze-JSv">
+                        <barButtonItem key="rightBarButtonItem" title="&lt;" style="done" id="Dbq-eD-KfD">
+                            <connections>
+                                <segue destination="QEy-V1-um9" kind="show" id="oWq-s0-fJ3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="screenEdgePanGesture" destination="vLk-Lm-edo" id="tU0-JN-wwx"/>
                     </connections>
@@ -244,7 +250,13 @@
                             <outletCollection property="gestureRecognizers" destination="c64-h3-xoy" appends="YES" id="7z7-VH-269"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Second" id="zaB-v4-Yxg"/>
+                    <navigationItem key="navigationItem" title="Second" id="zaB-v4-Yxg">
+                        <barButtonItem key="rightBarButtonItem" title="&lt;" style="done" id="xqS-9L-jcw">
+                            <connections>
+                                <segue destination="QEy-V1-um9" kind="show" id="EcS-w0-eG2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="screenEdgePanGesture" destination="c64-h3-xoy" id="dPV-sv-9gp"/>
                     </connections>
@@ -275,7 +287,13 @@
                             <outletCollection property="gestureRecognizers" destination="v1F-9t-844" appends="YES" id="ikg-Bp-SEn"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="First" id="jr3-Sb-CjC"/>
+                    <navigationItem key="navigationItem" title="First" id="jr3-Sb-CjC">
+                        <barButtonItem key="rightBarButtonItem" title="&lt;" style="done" id="Kga-Xs-HyK">
+                            <connections>
+                                <segue destination="QEy-V1-um9" kind="show" id="Hf2-7J-Kle"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="screenEdgePanGesture" destination="v1F-9t-844" id="WX9-up-9QD"/>
                     </connections>
@@ -381,4 +399,7 @@
             <point key="canvasLocation" x="917.60000000000002" y="2352.7736131934034"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oWq-s0-fJ3"/>
+    </inferredMetricsTieBreakers>
 </document>

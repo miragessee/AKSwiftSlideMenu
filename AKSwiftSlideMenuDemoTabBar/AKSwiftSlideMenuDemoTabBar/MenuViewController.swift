@@ -105,6 +105,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if BaseViewController.isLeftSlideAction
         {
             delegate?.slideMenuItemSelectedAtIndex(Int32(indexPath.row))
+            BaseViewController.isLeftSlideAction = false
         }
         self.onCloseMenuClick(btn)
     }
