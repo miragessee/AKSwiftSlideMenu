@@ -26,21 +26,21 @@ class TabBarController: UITabBarController , SlideMenuDelegate{
         print("View Controller is : \(topViewController) \n", terminator: "")
         switch(index){
         case 0:
-            //print("First\n", terminator: "")
+            print("First\n", terminator: "")
             
-            //self.openViewControllerBasedOnIdentifier("First")
+            self.openViewControllerBasedOnIdentifier("FirstCellViewController")
             
             break
         case 1:
-            //print("Second\n", terminator: "")
+            print("Second\n", terminator: "")
             
-            //self.openViewControllerBasedOnIdentifier("Second")
+            self.openViewControllerBasedOnIdentifier("SecondCellViewController")
             
             break
         case 2:
-            //print("Third\n", terminator: "")
+            print("Third\n", terminator: "")
             
-            //self.openViewControllerBasedOnIdentifier("Third")
+            self.openViewControllerBasedOnIdentifier("ThirdCellViewController")
             
             break
         default:
@@ -51,13 +51,15 @@ class TabBarController: UITabBarController , SlideMenuDelegate{
     func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
         let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
         
-        let topViewController : UIViewController = self.navigationController!.topViewController!
+        /*let topViewController : UIViewController = self.navigationController!.topViewController!
         
         if (topViewController.restorationIdentifier! == destViewController.restorationIdentifier!){
             print("Same VC")
         } else {
             self.navigationController!.pushViewController(destViewController, animated: true)
-        }
+        }*/
+        ///self.present(destViewController, animated:true, completion:nil)
+        self.navigationController!.pushViewController(destViewController, animated: true)
     }
     
     func addSlideMenuButton(){

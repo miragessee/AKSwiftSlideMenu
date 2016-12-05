@@ -25,6 +25,7 @@ class FirstViewController: BaseViewController {
     @IBAction func leftSlideAction(_ sender: Any) {
         if (sender as AnyObject).state == .ended
         {
+            BaseViewController.isLeftSlideAction = true
             BaseViewController.isOpen = true
             print("left slide")
             
