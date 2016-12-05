@@ -10,7 +10,10 @@ import UIKit
 
 class ThirdViewController: BaseViewController {
 
+    @IBOutlet var screenEdgePanGesture: UIScreenEdgePanGestureRecognizer!
+    
     override func viewDidLoad() {
+        screenEdgePanGesture.edges = .left
         super.viewDidLoad()
         addSlideMenuButton()
         // Do any additional setup after loading the view.

@@ -9,9 +9,12 @@
 import UIKit
 
 class FirstViewController: BaseViewController {
+    
+    @IBOutlet var screenEdgePanGesture: UIScreenEdgePanGestureRecognizer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        screenEdgePanGesture.edges = .left
         addSlideMenuButton()
         // Do any additional setup after loading the view.
     }

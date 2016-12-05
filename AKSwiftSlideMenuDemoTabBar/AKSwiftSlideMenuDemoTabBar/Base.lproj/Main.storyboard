@@ -148,6 +148,9 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" id="3pX-vK-Ext"/>
+                    <connections>
+                        <outlet property="screenEdgePanGesture" destination="pCB-hh-g8c" id="RY6-vJ-bd7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qL-7p-rzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="pCB-hh-g8c">
@@ -186,6 +189,9 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" id="XnM-CB-Qqa"/>
+                    <connections>
+                        <outlet property="screenEdgePanGesture" destination="cOX-rZ-6wQ" id="8Kc-Aa-qs9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbs-uI-yRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="cOX-rZ-6wQ">
@@ -334,6 +340,9 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Third" id="pdF-mG-F1U"/>
+                    <connections>
+                        <outlet property="screenEdgePanGesture" destination="VwW-ha-zui" id="VV7-TW-j95"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8j-dT-NWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="VwW-ha-zui">
@@ -400,6 +409,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oWq-s0-fJ3"/>
+        <segue reference="Hf2-7J-Kle"/>
     </inferredMetricsTieBreakers>
 </document>
