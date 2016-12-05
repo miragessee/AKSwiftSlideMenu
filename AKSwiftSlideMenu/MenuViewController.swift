@@ -119,6 +119,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let btn = UIButton(type: UIButtonType.custom)
         btn.tag = indexPath.row
+        delegate?.slideMenuItemSelectedAtIndex(Int32(indexPath.row))
         self.onCloseMenuClick(btn)
     }
     
