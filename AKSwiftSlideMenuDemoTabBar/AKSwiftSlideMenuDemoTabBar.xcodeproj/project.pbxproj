@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84BE2B6C1DF5985E00E94DA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2B6B1DF5985E00E94DA1 /* AppDelegate.swift */; };
+		84BE2B6E1DF5985E00E94DA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2B6D1DF5985E00E94DA1 /* ViewController.swift */; };
+		84BE2B711DF5985E00E94DA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BE2B6F1DF5985E00E94DA1 /* Main.storyboard */; };
+		84BE2B731DF5985E00E94DA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BE2B721DF5985E00E94DA1 /* Assets.xcassets */; };
+		84BE2B761DF5985E00E94DA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84BE2B741DF5985E00E94DA1 /* LaunchScreen.storyboard */; };
+		84BE2B811DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2B801DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests.swift */; };
+		84BE2B8C1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2B8B1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests.swift */; };
+		84BE2B9A1DF59DD800E94DA1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2B991DF59DD800E94DA1 /* MenuViewController.swift */; };
+		84BE2B9C1DF59F5200E94DA1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2B9B1DF59F5200E94DA1 /* BaseViewController.swift */; };
+		84BE2BA01DF5A10F00E94DA1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2B9F1DF5A10F00E94DA1 /* FirstViewController.swift */; };
+		84BE2BA21DF5A11B00E94DA1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2BA11DF5A11B00E94DA1 /* SecondViewController.swift */; };
+		84BE2BA41DF5A12500E94DA1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2BA31DF5A12500E94DA1 /* ThirdViewController.swift */; };
+		84BE2BAE1DF5A3FD00E94DA1 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2BAC1DF5A3FD00E94DA1 /* FirstTableViewCell.swift */; };
+		84BE2BAF1DF5A3FD00E94DA1 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BE2BAD1DF5A3FD00E94DA1 /* FirstTableViewCell.xib */; };
+		84BE2BB21DF5A40A00E94DA1 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2BB01DF5A40A00E94DA1 /* SecondTableViewCell.swift */; };
+		84BE2BB31DF5A40A00E94DA1 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BE2BB11DF5A40A00E94DA1 /* SecondTableViewCell.xib */; };
+		84BE2BB61DF5A41500E94DA1 /* ThirdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2BB41DF5A41500E94DA1 /* ThirdTableViewCell.swift */; };
+		84BE2BB71DF5A41500E94DA1 /* ThirdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BE2BB51DF5A41500E94DA1 /* ThirdTableViewCell.xib */; };
+		84BE2BB91DF5A62500E94DA1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BE2BB81DF5A62500E94DA1 /* TabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84BE2B7D1DF5985E00E94DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BE2B601DF5985E00E94DA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84BE2B671DF5985E00E94DA1;
+			remoteInfo = AKSwiftSlideMenuDemoTabBar;
+		};
+		84BE2B881DF5985E00E94DA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BE2B601DF5985E00E94DA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84BE2B671DF5985E00E94DA1;
+			remoteInfo = AKSwiftSlideMenuDemoTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84BE2B681DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKSwiftSlideMenuDemoTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BE2B6B1DF5985E00E94DA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84BE2B6D1DF5985E00E94DA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84BE2B701DF5985E00E94DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84BE2B721DF5985E00E94DA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84BE2B751DF5985E00E94DA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84BE2B771DF5985E00E94DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BE2B7C1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKSwiftSlideMenuDemoTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BE2B801DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKSwiftSlideMenuDemoTabBarTests.swift; sourceTree = "<group>"; };
+		84BE2B821DF5985E00E94DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BE2B871DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AKSwiftSlideMenuDemoTabBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BE2B8B1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKSwiftSlideMenuDemoTabBarUITests.swift; sourceTree = "<group>"; };
+		84BE2B8D1DF5985E00E94DA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84BE2B991DF59DD800E94DA1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		84BE2B9B1DF59F5200E94DA1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84BE2B9F1DF5A10F00E94DA1 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		84BE2BA11DF5A11B00E94DA1 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		84BE2BA31DF5A12500E94DA1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		84BE2BAC1DF5A3FD00E94DA1 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		84BE2BAD1DF5A3FD00E94DA1 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		84BE2BB01DF5A40A00E94DA1 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		84BE2BB11DF5A40A00E94DA1 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		84BE2BB41DF5A41500E94DA1 /* ThirdTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdTableViewCell.swift; sourceTree = "<group>"; };
+		84BE2BB51DF5A41500E94DA1 /* ThirdTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdTableViewCell.xib; sourceTree = "<group>"; };
+		84BE2BB81DF5A62500E94DA1 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BE2B651DF5985E00E94DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE2B791DF5985E00E94DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE2B841DF5985E00E94DA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84BE2B5F1DF5985E00E94DA1 = {
+			isa = PBXGroup;
+			children = (
+				84BE2B6A1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar */,
+				84BE2B7F1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests */,
+				84BE2B8A1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests */,
+				84BE2B691DF5985E00E94DA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84BE2B691DF5985E00E94DA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BE2B681DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar.app */,
+				84BE2B7C1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests.xctest */,
+				84BE2B871DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BE2B6A1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				84BE2BA51DF5A35400E94DA1 /* LeftMenuCells */,
+				84BE2B6B1DF5985E00E94DA1 /* AppDelegate.swift */,
+				84BE2B6D1DF5985E00E94DA1 /* ViewController.swift */,
+				84BE2B6F1DF5985E00E94DA1 /* Main.storyboard */,
+				84BE2B721DF5985E00E94DA1 /* Assets.xcassets */,
+				84BE2B741DF5985E00E94DA1 /* LaunchScreen.storyboard */,
+				84BE2B771DF5985E00E94DA1 /* Info.plist */,
+				84BE2B991DF59DD800E94DA1 /* MenuViewController.swift */,
+				84BE2B9B1DF59F5200E94DA1 /* BaseViewController.swift */,
+				84BE2B9F1DF5A10F00E94DA1 /* FirstViewController.swift */,
+				84BE2BA11DF5A11B00E94DA1 /* SecondViewController.swift */,
+				84BE2BA31DF5A12500E94DA1 /* ThirdViewController.swift */,
+				84BE2BB81DF5A62500E94DA1 /* TabBarController.swift */,
+			);
+			path = AKSwiftSlideMenuDemoTabBar;
+			sourceTree = "<group>";
+		};
+		84BE2B7F1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				84BE2B801DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests.swift */,
+				84BE2B821DF5985E00E94DA1 /* Info.plist */,
+			);
+			path = AKSwiftSlideMenuDemoTabBarTests;
+			sourceTree = "<group>";
+		};
+		84BE2B8A1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84BE2B8B1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests.swift */,
+				84BE2B8D1DF5985E00E94DA1 /* Info.plist */,
+			);
+			path = AKSwiftSlideMenuDemoTabBarUITests;
+			sourceTree = "<group>";
+		};
+		84BE2BA51DF5A35400E94DA1 /* LeftMenuCells */ = {
+			isa = PBXGroup;
+			children = (
+				84BE2BAC1DF5A3FD00E94DA1 /* FirstTableViewCell.swift */,
+				84BE2BAD1DF5A3FD00E94DA1 /* FirstTableViewCell.xib */,
+				84BE2BB01DF5A40A00E94DA1 /* SecondTableViewCell.swift */,
+				84BE2BB11DF5A40A00E94DA1 /* SecondTableViewCell.xib */,
+				84BE2BB41DF5A41500E94DA1 /* ThirdTableViewCell.swift */,
+				84BE2BB51DF5A41500E94DA1 /* ThirdTableViewCell.xib */,
+			);
+			name = LeftMenuCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BE2B671DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BE2B901DF5985E00E94DA1 /* Build configuration list for PBXNativeTarget "AKSwiftSlideMenuDemoTabBar" */;
+			buildPhases = (
+				84BE2B641DF5985E00E94DA1 /* Sources */,
+				84BE2B651DF5985E00E94DA1 /* Frameworks */,
+				84BE2B661DF5985E00E94DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AKSwiftSlideMenuDemoTabBar;
+			productName = AKSwiftSlideMenuDemoTabBar;
+			productReference = 84BE2B681DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84BE2B7B1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BE2B931DF5985E00E94DA1 /* Build configuration list for PBXNativeTarget "AKSwiftSlideMenuDemoTabBarTests" */;
+			buildPhases = (
+				84BE2B781DF5985E00E94DA1 /* Sources */,
+				84BE2B791DF5985E00E94DA1 /* Frameworks */,
+				84BE2B7A1DF5985E00E94DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84BE2B7E1DF5985E00E94DA1 /* PBXTargetDependency */,
+			);
+			name = AKSwiftSlideMenuDemoTabBarTests;
+			productName = AKSwiftSlideMenuDemoTabBarTests;
+			productReference = 84BE2B7C1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84BE2B861DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BE2B961DF5985E00E94DA1 /* Build configuration list for PBXNativeTarget "AKSwiftSlideMenuDemoTabBarUITests" */;
+			buildPhases = (
+				84BE2B831DF5985E00E94DA1 /* Sources */,
+				84BE2B841DF5985E00E94DA1 /* Frameworks */,
+				84BE2B851DF5985E00E94DA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84BE2B891DF5985E00E94DA1 /* PBXTargetDependency */,
+			);
+			name = AKSwiftSlideMenuDemoTabBarUITests;
+			productName = AKSwiftSlideMenuDemoTabBarUITests;
+			productReference = 84BE2B871DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BE2B601DF5985E00E94DA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = miragessee;
+				TargetAttributes = {
+					84BE2B671DF5985E00E94DA1 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4UVZ98Y2YU;
+						ProvisioningStyle = Automatic;
+					};
+					84BE2B7B1DF5985E00E94DA1 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4UVZ98Y2YU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84BE2B671DF5985E00E94DA1;
+					};
+					84BE2B861DF5985E00E94DA1 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4UVZ98Y2YU;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 84BE2B671DF5985E00E94DA1;
+					};
+				};
+			};
+			buildConfigurationList = 84BE2B631DF5985E00E94DA1 /* Build configuration list for PBXProject "AKSwiftSlideMenuDemoTabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84BE2B5F1DF5985E00E94DA1;
+			productRefGroup = 84BE2B691DF5985E00E94DA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BE2B671DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar */,
+				84BE2B7B1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests */,
+				84BE2B861DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BE2B661DF5985E00E94DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BE2B761DF5985E00E94DA1 /* LaunchScreen.storyboard in Resources */,
+				84BE2B731DF5985E00E94DA1 /* Assets.xcassets in Resources */,
+				84BE2BB31DF5A40A00E94DA1 /* SecondTableViewCell.xib in Resources */,
+				84BE2BAF1DF5A3FD00E94DA1 /* FirstTableViewCell.xib in Resources */,
+				84BE2B711DF5985E00E94DA1 /* Main.storyboard in Resources */,
+				84BE2BB71DF5A41500E94DA1 /* ThirdTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE2B7A1DF5985E00E94DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE2B851DF5985E00E94DA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BE2B641DF5985E00E94DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BE2BA21DF5A11B00E94DA1 /* SecondViewController.swift in Sources */,
+				84BE2BA01DF5A10F00E94DA1 /* FirstViewController.swift in Sources */,
+				84BE2BB91DF5A62500E94DA1 /* TabBarController.swift in Sources */,
+				84BE2B6E1DF5985E00E94DA1 /* ViewController.swift in Sources */,
+				84BE2BA41DF5A12500E94DA1 /* ThirdViewController.swift in Sources */,
+				84BE2B9C1DF59F5200E94DA1 /* BaseViewController.swift in Sources */,
+				84BE2BB21DF5A40A00E94DA1 /* SecondTableViewCell.swift in Sources */,
+				84BE2B9A1DF59DD800E94DA1 /* MenuViewController.swift in Sources */,
+				84BE2BB61DF5A41500E94DA1 /* ThirdTableViewCell.swift in Sources */,
+				84BE2BAE1DF5A3FD00E94DA1 /* FirstTableViewCell.swift in Sources */,
+				84BE2B6C1DF5985E00E94DA1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE2B781DF5985E00E94DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BE2B811DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84BE2B831DF5985E00E94DA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BE2B8C1DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84BE2B7E1DF5985E00E94DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84BE2B671DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar */;
+			targetProxy = 84BE2B7D1DF5985E00E94DA1 /* PBXContainerItemProxy */;
+		};
+		84BE2B891DF5985E00E94DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84BE2B671DF5985E00E94DA1 /* AKSwiftSlideMenuDemoTabBar */;
+			targetProxy = 84BE2B881DF5985E00E94DA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84BE2B6F1DF5985E00E94DA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BE2B701DF5985E00E94DA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84BE2B741DF5985E00E94DA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BE2B751DF5985E00E94DA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BE2B8E1DF5985E00E94DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84BE2B8F1DF5985E00E94DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84BE2B911DF5985E00E94DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4UVZ98Y2YU;
+				INFOPLIST_FILE = AKSwiftSlideMenuDemoTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miragessee.AKSwiftSlideMenuDemoTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		84BE2B921DF5985E00E94DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4UVZ98Y2YU;
+				INFOPLIST_FILE = AKSwiftSlideMenuDemoTabBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miragessee.AKSwiftSlideMenuDemoTabBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		84BE2B941DF5985E00E94DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4UVZ98Y2YU;
+				INFOPLIST_FILE = AKSwiftSlideMenuDemoTabBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miragessee.AKSwiftSlideMenuDemoTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKSwiftSlideMenuDemoTabBar.app/AKSwiftSlideMenuDemoTabBar";
+			};
+			name = Debug;
+		};
+		84BE2B951DF5985E00E94DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4UVZ98Y2YU;
+				INFOPLIST_FILE = AKSwiftSlideMenuDemoTabBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miragessee.AKSwiftSlideMenuDemoTabBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AKSwiftSlideMenuDemoTabBar.app/AKSwiftSlideMenuDemoTabBar";
+			};
+			name = Release;
+		};
+		84BE2B971DF5985E00E94DA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4UVZ98Y2YU;
+				INFOPLIST_FILE = AKSwiftSlideMenuDemoTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miragessee.AKSwiftSlideMenuDemoTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AKSwiftSlideMenuDemoTabBar;
+			};
+			name = Debug;
+		};
+		84BE2B981DF5985E00E94DA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4UVZ98Y2YU;
+				INFOPLIST_FILE = AKSwiftSlideMenuDemoTabBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.miragessee.AKSwiftSlideMenuDemoTabBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AKSwiftSlideMenuDemoTabBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BE2B631DF5985E00E94DA1 /* Build configuration list for PBXProject "AKSwiftSlideMenuDemoTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BE2B8E1DF5985E00E94DA1 /* Debug */,
+				84BE2B8F1DF5985E00E94DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BE2B901DF5985E00E94DA1 /* Build configuration list for PBXNativeTarget "AKSwiftSlideMenuDemoTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BE2B911DF5985E00E94DA1 /* Debug */,
+				84BE2B921DF5985E00E94DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84BE2B931DF5985E00E94DA1 /* Build configuration list for PBXNativeTarget "AKSwiftSlideMenuDemoTabBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BE2B941DF5985E00E94DA1 /* Debug */,
+				84BE2B951DF5985E00E94DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84BE2B961DF5985E00E94DA1 /* Build configuration list for PBXNativeTarget "AKSwiftSlideMenuDemoTabBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BE2B971DF5985E00E94DA1 /* Debug */,
+				84BE2B981DF5985E00E94DA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BE2B601DF5985E00E94DA1 /* Project object */;
+}
